@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .bio {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bio">
+            Hi, I'm Divyanshu Pal. I am a student currently pursuing my B.Tech degree
+            in Computer Science at Amity University Gwalior. In my academic journey so
+            far, I achieved 90% in my 10th board examinations and maintain an 8.0 CGPA 
+            in my ongoing second year. I am passionate about technology and enjoy exploring
+            new developments in the field of computer science.. When I'm not coding, you can 
+            find me exploring new technologies, reading tech blogs, or enjoying a cup of coffee
+            while  brainstorming new project ideas.
+            Connect with me on <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>,
+             <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>, 
+             or <a href="https://github.com/Divyanshu-official/Hunar-Intern" target="_blank">GitHub</a>.
+        </div>
+    </div>
+</body>
+</html>
