@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadPage(page) {
+            const content = {
+                home: `
+                    <h2>Our Courses</h2>
+                    <p>At Divyanshu Pal's Online Courses, we offer a diverse selection of meticulously
+                 crafted courses designed to help Computer Science students excel. Dive into the world 
+                 of Data Science, where you'll master the art of extracting valuable insights from data.
+                  Explore Web Development to build stunning, responsive websites. Unlock the potential
+                   of Artificial Intelligence and Machine Learning with our AI/ML courses. Sharpen your
+                    problem-solving skills with our Data Structures and Algorithms (DSA) course. Each 
+                    course is led by industry experts, providing hands-on experience and real-world 
+                    applications to ensure you gain practical, in-demand skills for your career.</p>
+                `,
+                about: `
+                    <h1>About Us</h1>
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to Divyanshu Pal's Online Courses, your go-to platform for comprehensive and 
+                engaging courses tailored specifically for Computer Science students. Our mission is
+                 to equip you with the skills and knowledge needed to excel in today's competitive 
+                 tech industry.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We strive to provide high-quality, accessible education to help students and professionals
+                 alike advance their careers in the ever-evolving field of technology. Our courses are 
+                 designed to be practical, hands-on, and aligned with industry standards.</p>
+        </section>
+        <section>
+            <h2>History</h2>
+            <p>Founded by Divyanshu Pal, a passionate educator and tech enthusiast, our platform has 
+                grown to offer a wide range of courses since its inception. Our journey began with a
+                 simple goal: to make top-notch tech education available to everyone, everywhere.</p>
+        </section>
+        <section>
+            <h2>Courses Offered</h2>
+            <p>We offer a diverse array of courses to cater to different interests and career paths
+                 within the field of Computer Science. Our offerings include:</p>
+            <ul>
+                <li>Data Science</li>
+                <li>Web Development</li>
+                <li>Artificial Intelligence and Machine Learning (AI/ML)</li>
+                <li>Data Structures and Algorithms (DSA)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Meet the Team</h2>
+            <p>Our team is composed of experienced educators, industry professionals, and dedicated 
+                support staff, all committed to your learning journey. We believe in fostering a 
+                collaborative and interactive learning environment.</p>
+        </section>
+        <section>
+            <h2>Achievements</h2>
+            <p>Over the years, we have been recognized for our innovative approach to online education
+                 and have received numerous accolades from educational bodies. Our learners' success
+                  stories are our greatest achievement.</p>
+        </section>
+        <section>
+            <h2>Future Goals</h2>
+            <p>Looking ahead, we aim to expand our course offerings, introduce new learning formats, 
+                and reach a global audience. Our goal is to continually adapt and evolve to meet the 
+                needs of our learners in a dynamic tech landscape.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Divyanshu Pal's Online Courses</p>
+                `,
+                register: `
+                    <h2>Registration Form</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="course">Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="Choose Your Course">Choose Course</option>
+                            <option value="aiml">AI/ML</option>
+                            <option value="datascience">Data Science</option>
+                            <option value="webdevelopment">Web Development</option>
+                            <option value="dsa">DSA</option>
+                        </select><br>
+                        <input type="submit" value="Register">
+                    </form>
+                `,
+                contact: `
+                   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Divyanshu Pal's Online Courses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <main>
+        <h1>Contact Us</h1>
+        <form action="contact.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: info@divyanshupal-courses.com</p>
+            <p>Phone: +1 123-456-7890</p>
+            <p>Address: 123 Learning St, Education City, Knowledge State, 12345</p>
+        </section>
+        <section>
+            <h2>Follow Us</h2>
+            <p>
+                <a href="https://facebook.com/divyanshupal-courses">Facebook</a> |
+                <a href="https://twitter.com/divyanshupal-courses">Twitter</a> |
+                <a href="https://linkedin.com/company/divyanshupal-courses">LinkedIn</a>
+            </p>
+        </section>
+        <section>
+                `
+            };
+            document.getElementById('main-content').innerHTML = content[page];
+        }
+
+        window.onload = function() {
+            loadPage('home');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Course Website</h1>
+        <nav>
+            <a href="#" onclick="loadPage('home')">Home</a>
+            <a href="#" onclick="loadPage('about')">About Us</a>
+            <a href="#" onclick="loadPage('register')">Register</a>
+            <a href="#" onclick="loadPage('contact')">Contact</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Best Online Course Website</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.courses {
+    margin-top: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px
+}
+
